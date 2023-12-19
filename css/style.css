@@ -40,6 +40,7 @@ nav {
 
 .row-nav {
     display: flex;
+    justify-content: space-between;
 }
 
 ul {
@@ -244,4 +245,45 @@ section>h2 {
 .button {
     border: orange 1px solid;
     width: 360px;
+}
+
+/*questions*/
+
+.footer-container>h2 {
+    margin-top: 0;
+}
+
+.question {
+    display: flex;
+    border: 1px solid cornflowerblue;
+    height: 70px;
+    align-items: center;
+}
+
+/*bottom footer link section*/
+.bottom-footer {
+    background-color: aquamarine;
+    height: auto;
+}
+
+.row-bot {
+    display: flex;
+    padding: 100px 80px;
+
+}
+
+.columns {
+    border: 1px black solid;
+    height: 500px;
+    width: calc(100%/ 5);
+    justify-content: space-between;
+}
+
+.ul-bot {
+    display: block;
+    line-height: 35px;
+}
+
+h3 {
+    padding: 20px;
 }
