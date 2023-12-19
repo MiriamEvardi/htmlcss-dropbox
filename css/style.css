@@ -57,7 +57,8 @@ ul {
 header {
     background-color: aqua;
     /*test*/
-    height: 600px;
+
+    height: 740px;
     /*??*/
     padding-top: 45px;
 
@@ -65,15 +66,16 @@ header {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 70px;
     font-family: 'open-sans-bold';
     padding: 50px 80px;
+    text-align: left;
 
 }
 
@@ -86,29 +88,28 @@ h1 {
     background-color: blueviolet;
     /*test*/
 
-    width: 300px;
-    height: 350px;
+    width: 400px;
+    height: 500px;
 }
 
 .big-container {
     background-color: brown;
     /*test*/
 
-    width: 550px;
+    width: 700px;
 }
 
 
 /*main*/
-main {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-}
+main {}
 
 /*columns*/
 
 section {
-    padding: 45px 150px;
+
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -119,6 +120,7 @@ h2 {
 
 div>h2 {
     padding: 50px 0;
+    margin-top: 100px;
 }
 
 .radio {
@@ -145,25 +147,31 @@ div>h2 {
 
 .column-bottom {
     border: black solid 1px;
-    height: 150px;
+    height: 250px;
     margin-top: 30px;
     margin-bottom: 40px;
 }
 
 /*image + p*/
+
+section:nth-child(2) {
+    display: flex;
+    padding: 40px 0;
+}
+
 main>.container {
     display: flex;
 }
 
 .image {
     border: black solid 2px;
-    width: 350px;
-    height: 300px;
+    width: 500px;
+    height: 450px;
 }
 
 .paragraph {
     border: black solid 2px;
-    width: 270px;
+    width: 400px;
 
 }
 
@@ -173,6 +181,7 @@ section>.container {
     display: flex;
     flex-wrap: wrap;
     border: solid black 1px;
+
     height: 575px;
     margin-top: 50px;
 }
@@ -194,7 +203,7 @@ section>h2 {
 .companies-container {
     border: solid green 1px;
     display: flex;
-    height: 370px;
+    height: 380px;
     margin-top: 50px;
 }
 
@@ -215,21 +224,24 @@ section>h2 {
 }
 
 .footer-container {
-    padding: 45px 150px;
+    padding: 80px 150px;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-
 
 }
 
 .business {
     display: flex;
+}
 
+.subtitle {
     border: orange 1px solid;
-    height: 300px;
+    height: 130px;
+    width: 360px;
+}
 
-
-
-
+.button {
+    border: orange 1px solid;
+    width: 360px;
 }
