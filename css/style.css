@@ -4,8 +4,27 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'open-sans';
+    src: url(/font/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'open-sans-bold';
+    src: url(/font/OpenSans-ExtraBold.ttf);
+}
+
+body {
+    font-family: 'open-sans', sans-serif;
+}
+
+/*nav*/
+
 nav {
+    position: fixed;
+    z-index: 2;
     background-color: blue;
+    width: 100%;
     /*test*/
 
     height: 50px;
@@ -32,13 +51,17 @@ ul {
     padding: 0 22px;
 }
 
+
+/*header*/
+
 header {
     background-color: aqua;
     /*test*/
-    height: 380px;
-    padding: 45px 250px;
+    height: 600px;
+    /*??*/
+    padding-top: 45px;
 
-    text-align: center;
+    text-align: left;
 }
 
 .container {
@@ -47,38 +70,119 @@ header {
     margin-right: auto;
 }
 
+h1 {
+    font-size: 60px;
+    font-family: 'open-sans-bold';
+    padding: 50px 80px;
+
+}
+
 .row {
     display: flex;
     justify-content: center;
-}
-
-h1 {
-    font-size: px;
-    padding-bottom: 42px;
 }
 
 .small-container {
     background-color: blueviolet;
     /*test*/
 
-    width: 230px;
-    height: 275px;
+    width: 300px;
+    height: 350px;
 }
 
 .big-container {
     background-color: brown;
     /*test*/
 
-    width: 460px;
+    width: 550px;
 }
 
+
+/*main*/
 main {
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
 
+/*columns*/
+
 section {
-    padding: 45px 250px;
+    padding: 45px 150px;
+
 }
 
-h2 {}
+h2 {
+    font-family: 'open-sans';
+    font-size: 32px;
+}
+
+div>h2 {
+    padding: 50px 0;
+}
+
+.radio {
+    display: inline-block;
+
+    padding-right: 30px;
+    padding-bottom: 25px;
+}
+
+.container-column {
+    background-color: aquamarine;
+
+    display: flex;
+    gap: 30px;
+
+    max-width: 1000px;
+    height: 550px;
+}
+
+.column {
+    border: black solid 1px;
+    width: calc(100%/3);
+}
+
+.column-bottom {
+    border: black solid 1px;
+    height: 150px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+/*image + p*/
+main>.container {
+    display: flex;
+}
+
+.image {
+    border: black solid 2px;
+    width: 350px;
+    height: 300px;
+}
+
+.paragraph {
+    border: black solid 2px;
+    width: 270px;
+
+}
+
+/*flex da 6*/
+
+section>.container {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid black 1px;
+    height: 575px;
+    margin-top: 50px;
+}
+
+.tool {
+    width: calc(100%/ 3);
+    border: solid pink 1px;
+}
+
+section>h2 {
+    margin-bottom: 40px;
+    margin-top: 60px;
+}
