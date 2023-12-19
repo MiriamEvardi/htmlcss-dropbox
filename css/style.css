@@ -19,15 +19,66 @@ nav {
     align-items: center;
 }
 
-.row {
+.row-nav {
     display: flex;
 }
 
 ul {
     display: flex;
-
     align-items: center;
     list-style-type: none;
+
     gap: 22px;
     padding: 0 22px;
 }
+
+header {
+    background-color: aqua;
+    /*test*/
+    height: 380px;
+    padding: 45px 250px;
+
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: px;
+    padding-bottom: 42px;
+}
+
+.small-container {
+    background-color: blueviolet;
+    /*test*/
+
+    width: 230px;
+    height: 275px;
+}
+
+.big-container {
+    background-color: brown;
+    /*test*/
+
+    width: 460px;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    padding: 45px 250px;
+}
+
+h2 {}
