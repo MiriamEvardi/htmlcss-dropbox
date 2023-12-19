@@ -3,3 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+nav {
+    background-color: blue;
+    /*test*/
+
+    height: 50px;
+    padding: 10px;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.row {
+    display: flex;
+}
+
+ul {
+    display: flex;
+
+    align-items: center;
+    list-style-type: none;
+    gap: 22px;
+    padding: 0 22px;
+}
