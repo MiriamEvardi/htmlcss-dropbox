@@ -310,7 +310,6 @@ section>h2 {
 /*companies*/
 
 .companies-container {
-    border: solid green 1px;
     display: flex;
 
     margin-top: 100px;
@@ -322,11 +321,9 @@ section>h2 {
 
     width: calc(100vw/ 3);
     height: calc(100vw/ 3);
-    border: solid 1px black;
 }
 
 .square {
-    border: red 1px solid;
     width: calc(100%/ 2);
     height: calc(100%/ 2);
     padding: 60px;
