@@ -16,7 +16,7 @@
 
 body {
     font-family: 'open-sans', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 /*nav*/
@@ -126,7 +126,7 @@ img {
     padding: 12px 20px;
     margin-bottom: 30px;
 
-    font-size: 18px;
+    font-size: 14px;
 }
 
 
@@ -273,12 +273,13 @@ section>.container {
     flex-wrap: wrap;
 
     height: 900px;
-    margin-bottom: 450px;
+    margin-bottom: 50px;
 }
 
 .tool {
     width: calc(100%/ 3);
-    padding: 20px;
+    padding: 20px 0;
+    padding-right: 40px;
 }
 
 .tool-image,
@@ -308,7 +309,7 @@ section>h2 {
     border: solid green 1px;
     display: flex;
 
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .companies-container>div {
@@ -326,70 +327,93 @@ section>h2 {
     height: calc(100%/ 2);
 }
 
+
+/*Dropbox Business*/
 .background {
-    background-color: gray;
+    background-color: #B4D0E7;
     display: flex;
-}
-
-.footer-container {
-    padding: 80px 0;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-
 }
 
 .business {
     display: flex;
+    align-items: center;
 }
 
 .subtitle {
-    border: orange 1px solid;
-    height: 180px;
     width: 500px;
 }
 
 .button {
-    border: orange 1px solid;
+    text-align: right;
     width: 500px;
 }
 
-/*questions*/
+.button input {
+    padding: 10px 30px;
+    border: none;
+    background-color: white;
+}
 
-.footer-container>h2 {
+.subtitle h2 {
+    margin: 0;
+    color: #62062a;
+}
+
+
+/*questions*/
+.box {
+    padding: 80px 0;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box>h2 {
     margin-top: 0;
 }
 
 .question {
     display: flex;
-    border: 1px solid cornflowerblue;
-    height: 70px;
     align-items: center;
+    justify-content: space-between;
+
+    border-top: 1px solid #b1b1b1;
+    border-bottom: 1px solid #b1b1b1;
+
+    height: 70px;
 }
 
 /*bottom footer link section*/
-.bottom-footer {
-    background-color: aquamarine;
+footer {
+    background-color: black;
+    color: white;
+
     height: auto;
     margin-top: 70px;
 }
 
 .row-bot {
     display: flex;
-    padding: 100px 0;
+    justify-content: left;
 
+    padding: 80px 0;
+    gap: 100px;
 }
 
 .columns {
-    border: 1px black solid;
-    height: 500px;
+    height: 280px;
     width: calc(100%/ 5);
-    justify-content: space-between;
+}
+
+.columns h3 {
+    font-size: 20px;
+    padding: 20px 0;
 }
 
 .ul-bot {
     display: block;
     line-height: 35px;
+    padding: 0;
 }
 
 h3 {
@@ -398,4 +422,8 @@ h3 {
 
 .language {
     padding: 30px 0;
+}
+
+#line {
+    width: 100px;
 }
