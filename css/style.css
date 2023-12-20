@@ -19,16 +19,22 @@ body {
     font-size: 14px;
 }
 
-.container {
-    max-width: 1200px;
+.container,
+section {
     margin-left: auto;
     margin-right: auto;
 }
 
+.container {
+    max-width: 1200px;
+}
+
 section {
     max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+h3 {
+    padding: 20px;
 }
 
 /*nav*/
@@ -36,27 +42,27 @@ section {
 nav {
     position: fixed;
     z-index: 2;
-    background-color: white;
-    width: 100%;
-    /*test*/
 
+    background-color: white;
+
+    width: 100%;
     height: 70px;
     padding: 20px 25px;
 }
 
-#logo {
-    width: 150px;
-}
 
-.container-nav {
+.container-nav,
+.row-nav {
     display: flex;
     justify-content: space-between;
 }
 
 .row-nav {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+}
+
+#logo {
+    width: 150px;
 }
 
 ul {
@@ -68,6 +74,11 @@ ul {
     padding: 0 40px;
 }
 
+ul a {
+    text-decoration: none;
+    color: black;
+}
+
 #start {
     background-color: #0060f6;
     border: none;
@@ -77,6 +88,8 @@ ul {
 
     font-size: 18px;
 }
+
+
 
 
 /*header*/
@@ -108,18 +121,8 @@ h1 {
     height: 400px;
 }
 
-.big-container {
-    width: 70%;
-    height: 465px;
-}
-
 .text {
     margin-bottom: 30px;
-}
-
-img {
-    width: 100%;
-    height: 100%;
 }
 
 .blue-button {
@@ -133,12 +136,30 @@ img {
     font-size: 14px;
 }
 
+.big-container {
+    width: 70%;
+    height: 465px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.arrow-down {
+    font-size: 50px;
+
+    margin-top: 100px;
+}
+
+
 
 
 
 /*main*/
 
 /*start business plan*/
+/*radio buttons section*/
 
 h2 {
     font-family: 'open-sans';
@@ -157,6 +178,8 @@ div>h2 {
     margin-bottom: 80px;
 }
 
+/*3 columns*/
+
 .container-column {
     display: flex;
     gap: 30px;
@@ -165,36 +188,22 @@ div>h2 {
     height: auto;
 }
 
-.column {
-    border: #eaeaeb solid 1px;
-    width: calc(100%/3);
-}
-
-.column-bottom {
-    border: #eaeaeb solid 1px;
-    height: 250px;
-    margin-top: 30px;
-    margin-bottom: 150px;
-}
-
-
-
-/*content columns*/
-.recipient {
-    text-align: center;
-    border-bottom: solid 1px #eaeaeb;
-    padding: 10px 0;
-}
-
 .column>* {
     padding-left: 30px;
 }
 
-.button-container {
-    display: flex;
-    justify-content: center;
-    padding: 0;
+.column {
+    border: #eaeaeb solid 1px;
 
+    width: calc(100%/3);
+}
+
+.recipient {
+    text-align: center;
+
+    border-bottom: solid 1px #eaeaeb;
+
+    padding: 10px 0;
 }
 
 .features {
@@ -204,10 +213,51 @@ div>h2 {
     padding: 40px 30px;
 }
 
+.features li {
+    display: flex;
+    align-items: top;
+}
+
+.column div div {
+    color: #aaa19e;
+}
+
+.features li i {
+    margin-top: 3px;
+    margin-right: 6px;
+}
+
+.single {
+    margin-top: 18.5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
 .column hr {
     border: 1px solid #eaeaeb;
+
     width: 60px;
     margin: 30px;
+}
+
+.fa-check,
+.column div a,
+section a {
+    color: blue;
+}
+
+/*bottom row*/
+
+.column-bottom {
+    border: #eaeaeb solid 1px;
+
+    height: 250px;
+    margin-top: 30px;
+    margin-bottom: 150px;
 }
 
 .title-button {
@@ -215,27 +265,29 @@ div>h2 {
     justify-content: space-between;
 }
 
-
-/*content bottom column*/
-
-.column-bottom strong,
-.column-bottom p {
-    margin-left: 30px;
-}
-
-.title-button>.blue-button {
-    margin: 20px;
-}
-
 .column-bottom h3 {
     padding: 30px;
+}
+
+.contact {
+    margin: 20px;
 }
 
 .column-bottom p {
     margin-top: 40px
 }
 
+.column-bottom strong,
+.column-bottom p {
+    margin-left: 30px;
+}
+
+
+
+
+
 /*end business plan*/
+
 
 
 
@@ -257,7 +309,8 @@ section:nth-child(2) {
     width: 40%;
 }
 
-.paragraph p {
+.paragraph p,
+.paragraph input {
     margin-left: 20px;
 }
 
@@ -266,8 +319,8 @@ section:nth-child(2) {
 
     padding: 10px;
     margin-top: 30px;
-    margin-left: 20px;
 }
+
 
 
 
@@ -280,6 +333,11 @@ section>.container {
 
     height: 900px;
     margin-bottom: 50px;
+}
+
+section>h2 {
+    margin-bottom: 60px;
+    margin-top: 60px;
 }
 
 .tool {
@@ -299,10 +357,6 @@ section>.container {
     margin-bottom: 20px;
 }
 
-section>h2 {
-    margin-bottom: 60px;
-    margin-top: 60px;
-}
 
 
 
@@ -334,12 +388,21 @@ section>h2 {
     height: 25%;
 }
 
+.square-inner hr {
+    border: 1px solid #eaeaeb;
+
+    width: 60px;
+    margin-bottom: 32px;
+    margin-top: 16px;
+}
+
 .companies-container div:nth-child(2) {
     display: block;
 }
 
 .square-inner:nth-child(2) {
     background-color: #f5f5f5;
+
     padding: 40px;
 }
 
@@ -347,12 +410,6 @@ address {
     margin-top: 30px;
 }
 
-.square-inner hr {
-    border: 1px solid #eaeaeb;
-    width: 60px;
-    margin-bottom: 32px;
-    margin-top: 16px;
-}
 
 
 /*style company logos */
@@ -412,6 +469,13 @@ address {
     display: flex;
 }
 
+.box {
+    padding: 80px 0;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .business {
     display: flex;
     align-items: center;
@@ -419,6 +483,11 @@ address {
 
 .subtitle {
     width: 500px;
+}
+
+.subtitle h2 {
+    margin: 0;
+    color: #62062a;
 }
 
 .button {
@@ -432,20 +501,11 @@ address {
     background-color: white;
 }
 
-.subtitle h2 {
-    margin: 0;
-    color: #62062a;
-}
 
 
-/*questions*/
 
-.box {
-    padding: 80px 0;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
+/*Questions section*/
 
 .box>h2 {
     margin-top: 0;
@@ -501,14 +561,47 @@ footer {
     padding: 0;
 }
 
-h3 {
-    padding: 20px;
+.ul-bot a {
+    text-decoration: none;
+    color: white;
+}
+
+#line {
+    width: 100px;
 }
 
 .language {
     padding: 30px 0;
 }
 
-#line {
-    width: 100px;
+
+
+
+
+/*in-hover style*/
+
+.ul-bot a:hover {
+    text-decoration: underline;
+}
+
+ul a:hover {
+    text-decoration: underline;
+}
+
+#start:hover,
+.blue-button:hover,
+.button input:hover,
+.paragraph input:hover {
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.button input:hover,
+.paragraph input:hover {
+    color: rgb(59, 149, 239);
+}
+
+#start:hover,
+.blue-button:hover {
+    background-color: #4c8cf4;
 }
