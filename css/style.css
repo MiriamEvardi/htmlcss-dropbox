@@ -614,6 +614,11 @@ ul a:hover {
     cursor: pointer;
 }
 
+.blue-button:hover,
+#start:hover {
+    background-color: #4d8df4;
+}
+
 .button input:hover,
 .paragraph input:hover {
     color: rgb(59, 149, 239);
