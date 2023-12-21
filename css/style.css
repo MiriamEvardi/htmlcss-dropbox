@@ -587,7 +587,7 @@ address {
 
     border-bottom: 1px solid rgb(189, 189, 189);
     visibility: hidden;
-    opacity: 0;
+
     transition: 0.1s;
 }
 
@@ -699,7 +699,6 @@ ul a:hover {
 }
 
 .question .ask:hover .answer {
-    opacity: 1;
     visibility: visible;
     z-index: 1;
     background-color: white;
