@@ -67,8 +67,12 @@ nav {
     align-items: center;
 }
 
+.logo-container {
+    width: 30%;
+}
+
 #logo {
-    width: 150px;
+    width: 100%;
 }
 
 ul {
@@ -83,6 +87,7 @@ ul {
 ul a {
     text-decoration: none;
     color: black;
+    white-space: nowrap;
 }
 
 #start {
@@ -149,7 +154,6 @@ h1 {
 
 img {
     width: 100%;
-    height: 100%;
 }
 
 .arrow-down {
@@ -310,7 +314,7 @@ section a {
 
 section:nth-child(2) {
     display: flex;
-    margin-bottom: 150px;
+    margin-bottom: 250px;
 }
 
 .image {
@@ -350,7 +354,7 @@ section>.container {
     flex-wrap: wrap;
 
     height: 900px;
-    margin-bottom: 50px;
+    margin-bottom: 190px;
 }
 
 section>h2 {
@@ -367,7 +371,6 @@ section>h2 {
 .tool-image,
 .tool-text {
     width: 100%;
-    height: 50%;
 }
 
 .tool-text h3 {
@@ -384,18 +387,19 @@ section>h2 {
 .companies-container {
     display: flex;
 
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .square-inner {
     display: flex;
     flex-wrap: wrap;
 
-    width: calc(100vw/ 3);
+    width: calc(100%/ 3);
     height: calc(100vw/ 3);
 }
 
 .square {
+    position: relative;
     width: calc(100%/ 2);
     height: calc(100%/ 2);
     padding: 60px;
@@ -438,8 +442,17 @@ address {
 
 /*style company logos */
 
-.square>img {
-    filter: invert(100%)
+.square img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 50%;
+
+    transform: translate(-50%, -50%);
+
+    filter: invert(100%);
+
 }
 
 #designit {
@@ -530,19 +543,58 @@ address {
 
 /*Questions section*/
 
-.box>h2 {
-    margin-top: 0;
+.question-box h2 {
+    margin-top: 200px;
+    margin-bottom: 20px;
 }
 
 .question {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    list-style: none;
+    display: block;
 
-    border-top: 1px solid #b1b1b1;
-    border-bottom: 1px solid #b1b1b1;
+    padding: 40px 0;
+}
 
-    height: 70px;
+.question li {
+    position: relative;
+
+    border-top: 1px solid rgb(189, 189, 189);
+    border-bottom: 1px solid rgb(189, 189, 189);
+}
+
+.question li:first-child {
+    border-bottom: none;
+}
+
+.question li:last-child {
+    border-top: none;
+}
+
+.question a {
+    display: block;
+    font-family: 'open-sans-bold', sans-serif;
+    color: black;
+
+    padding: 35px 0;
+}
+
+.answer {
+    position: absolute;
+    top: 60px;
+    left: 0;
+
+    padding: 30px 0;
+
+    border-bottom: 1px solid rgb(189, 189, 189);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.1s;
+}
+
+.fa-angle-down {
+    position: absolute;
+    top: 45%;
+    right: 30px;
 }
 
 /*end main*/
@@ -641,3 +693,14 @@ ul a:hover {
 
 
 /*bonus*/
+
+.question .ask:hover .fa-angle-down {
+    transform: rotate(180deg);
+}
+
+.question .ask:hover .answer {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+    background-color: white;
+}
