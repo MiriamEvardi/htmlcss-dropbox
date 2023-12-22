@@ -194,8 +194,7 @@ div>h2 {
     border: 1px solid grey;
     padding: 5px;
     border-radius: 50%;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+
     appearance: none;
     cursor: pointer;
 }
@@ -250,7 +249,7 @@ div>h2 {
 }
 
 .single {
-    margin-top: 18.5px;
+    margin-top: 19.5px;
 }
 
 .button-container {
@@ -556,7 +555,6 @@ address {
 }
 
 .question li {
-    position: relative;
 
     border-top: 1px solid rgb(189, 189, 189);
     border-bottom: 1px solid rgb(189, 189, 189);
@@ -571,7 +569,9 @@ address {
 }
 
 .question a {
+    position: relative;
     display: block;
+
     font-family: 'open-sans-bold', sans-serif;
     color: black;
 
@@ -580,12 +580,11 @@ address {
 
 .answer {
     position: absolute;
-    top: 60px;
+    bottom: 0px;
     left: 0;
 
-    padding: 30px 0;
+    padding-bottom: 30px;
 
-    border-bottom: 1px solid rgb(189, 189, 189);
     visibility: hidden;
 
     transition: 0.1s;
@@ -641,6 +640,11 @@ footer {
     color: white;
 }
 
+
+
+
+/*languages*/
+
 #line {
     width: 100px;
 }
@@ -649,6 +653,11 @@ footer {
     padding: 30px 0;
 }
 
+select {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+}
 
 
 
@@ -699,7 +708,7 @@ ul a:hover {
 }
 
 .question .ask:hover .answer {
+    position: relative;
     visibility: visible;
-    z-index: 1;
     background-color: white;
 }
